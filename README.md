@@ -151,7 +151,7 @@ declare module "JQuery" {
 
 var $ = require('JQuery').$;
 ```
-. Detailed instruction can be found at http://flowtype.org/docs/declarations.html#_ .
+Detailed instruction can be found at http://flowtype.org/docs/declarations.html#_ .
 
 
 ### Forth -- handsontable
