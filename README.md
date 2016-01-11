@@ -137,7 +137,7 @@ In Flow, we need to modify the file `.flowconfig` in the root directory, which i
 ```
 flow init
 ```
-. Specifically, we add 
+Specifically, we add 
 ```
 [libs]
 interfaces/
@@ -191,11 +191,10 @@ class MouseEvent {
     isTargetWebComponent;
 }
 ```
-. And this annotation gives us an error message during TypeScript's static tying
+And this annotation gives us an error message during TypeScript's static tying
 ```
 tableView.ts(101,43): error TS2339: Property 'x' does not exist on type 'MouseEvent'.
 tableView.ts(101,69): error TS2339: Property 'y' does not exist on type 'MouseEvent'.
 tableView.ts(102,41): error TS2339: Property 'x' does not exist on type 'MouseEvent'.
 tableView.ts(102,50): error TS2339: Property 'y' does not exist on type 'MouseEvent'.
 ```
-.
