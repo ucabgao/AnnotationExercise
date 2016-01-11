@@ -21,11 +21,13 @@ is just text in the webpages. We rightclick the selected text and a context menu
 clicking the second option **Open File**. Currently, the default editor is `mvim`. The author can customise the editor via 
 the configuration file `config.xml` (to be decided). 
 
-We can use this GUI record annotation statistics, such as annotation time, whether a bug is detectable by the two static 
-type checkers, and reasons why a bug is deemed undetectable. The button `taxonomy` renders a table showing different reasons of undetectablility. Some of these reasons are from first principle and others are learnt during the preliminary study. The 
-GUI automatically stores the results in a file `results.csv` in the `data` folder.
+We can use this GUI to record some annotation statistics, such as annotation time, whether a bug is detectable by the two 
+static type checkers, and reasons why a bug is deemed undetectable. The button `taxonomy` renders a table showing different 
+reasons of undetectablility. Some of these reasons are from first principle and others are learnt during the preliminary 
+study. The GUI automatically stores the results in a file `results.csv` in the `data` folder.
 
-After the annotation, the authors can commit their changes by clicking the button `commit`. It automatically creates a branch named `authorName + repo` (to be decided), adds and commits all the changes, and pushes to the remote repo.
+After the annotation, the authors can commit their changes by clicking the button `commit`. It automatically creates a 
+branch named `authorName + repo` (to be decided), adds and commits all the changes, and pushes to the remote repo.
 
 ## Annotation Tutorial
 I once gave a brief tutorial on how to add annotations, which consists of four examples.
