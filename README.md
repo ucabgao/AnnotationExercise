@@ -124,7 +124,8 @@ This comment specifies a relative path for the declaration file `./jquery/jquery
 In Flow, we need to modify the file `.flowconfig` in the root directory, which is automatically created by the command 
 ```
 flow init
-```. Specifically, we add 
+```
+. Specifically, we add 
 ```
 [libs]
 interfaces/
