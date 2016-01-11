@@ -5,17 +5,29 @@ experiment.
 ## GUI Guidance
 A GUI application which facilitates the annotation process is provided.
 
-### AnnotationFacilitator Directory
-A GUI application which facilitates the annotation process is in this folder. 
-It displays the URLs of the issue pages and fix commit pages on GitHub. 
+To install this GUI, please download and run this script (to be appeared).
 
-We can use this facilitator to navigate different, here only five, projects 
-and record the time spent in annotating. This app stores the results, named
-*results.csv*, in the **data** subfolder.
+To use this GUI, we need to first provide some personal information in a file `config.xml` in the GUI's root directory, The 
+configuration includes your name which is used to create unique branches, GitHub username and password which are used to 
+push your changes so that other authors can see them. 
 
-### Projects Directory
-Five projects which have been checked out to the buggy parents of the fix 
-commits are in this folder.
+The configured GUI loads the input data that is in fact a set of bugs with information like the repo's name, SHAs of the 
+fix and buggy commit, URLs of the issue page, etc.. We navigate these bugs via two buttons, `next` and `previous`. 
+
+For each bug, the GUI is able to render webpages of the bug report, fix commit, and buggy commit. The fix commit page which 
+displays the changes that the developers made to the bug is especially important, because this is where we locate the bug 
+that is about to be annotated. Once we confirm the bug's location (which file it resides in), we select the file name which 
+is just text in the webpages. We rightclick the selected text and a context menu pops. We can open this file locally by 
+clicking the second option **Open File**. Currently, the default editor is `mvim`. The author can customise the editor via 
+the configuration file `config.xml` (to be decided). 
+
+We can use this GUI record annotation statistics, such as annotation time, whether a bug is detectable by the two static 
+type checkers, and reasons why a bug is deemed undetectable. The button `taxonomy` renders a table showing different reasons of undetectablility. Some of these reasons are from first principle and others are learnt by 
+
+It automatically stores the results in a file `results.csv` in 
+the `data` folder.
+
+After the annotation, the authors can commit their changes by clicking the button 
 
 ## Annotation Tutorial
 I once gave a brief tutorial on how to add annotations, which consists of four examples.
