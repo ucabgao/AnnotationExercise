@@ -7,9 +7,9 @@ A GUI application which facilitates the annotation process is provided.
 
 To install this GUI, please download and run this script (to be appeared).
 
-To use this GUI, we need to first provide some personal information in a file `config.xml` in the GUI's root directory, The 
-configuration includes your name which is used to create unique branches, GitHub username and password which are used to 
-push your changes so that other authors can see them. 
+To use this GUI, we need to first provide some personal information in a file `config.xml` in the GUI's root directory. The 
+configuration includes your name which is used to distinguish different branches, your GitHub's username and password which 
+are used to push your changes so that other authors can see them. 
 
 The configured GUI loads the input data that is in fact a set of bugs with information like the repo's name, SHAs of the 
 fix and buggy commit, URLs of the issue page, etc.. We navigate these bugs via two buttons, `next` and `previous`. 
