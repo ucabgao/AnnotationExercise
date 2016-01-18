@@ -78,6 +78,7 @@ function FormFiller() {
     };
     
     var _getValue = function(element){
+        // test martin
         return jQuery(element).val().replace(/"/g, '\\"');
     };
 
