@@ -26,7 +26,7 @@ fix and buggy commit, URLs of the issue page, etc.. We navigate these bugs via t
 For each bug, the GUI is able to render webpages of the bug report, fix commit, and buggy commit, via three buttons, `Bug report`, `Buggy commit`, and `Fix commit`. The fix commit page which 
 displays the changes that the developers made to the bug is especially important, because this is where we locate the bug 
 that is about to be annotated. Once we confirm the bug's location (which file it resides in), we select the file name which 
-is just text in the webpages. We rightclick the selected text and a context menu pops. We can open this file locally by 
+is text in the webpages. We rightclick the selected text and a context menu pops out. We can open this file locally by 
 clicking the second option **Open File**. Currently, the default editor is `mvim`. The author can customise the editor via 
 the configuration file `config.xml` (to be decided). 
 
