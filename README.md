@@ -3,14 +3,20 @@ This repo contains five bugs served as an exercise of type annotations for co-au
 experiment.
 
 ## GUI Guidance
-A GUI application which facilitates the annotation process is provided.
+A GUI application, **AnnotationFacilitator.jar**, which facilitates the annotation process is provided.
 
-To install this GUI, please download and run this script (to be appeared).
+### GUI Installation
+To install this GUI, please download and run this scriptm **install.rb** by.
+```
+ruby install.rb
+```
 
+### Configuration
 To use this GUI, we need to first provide some personal information in a file `config.xml` in the GUI's root directory. The 
 configuration includes your name which is used to distinguish different branches, your GitHub's username and password which 
-are used to push your changes so that other authors can see them. 
+are used to push your changes so that other authors can see them, and the absolute path of your preferered editor, **mvim** in my case.
 
+### Using the GUI 
 The configured GUI loads the input data that is in fact a set of bugs with information like the repo's name, SHAs of the 
 fix and buggy commit, URLs of the issue page, etc.. We navigate these bugs via two buttons, `next` and `previous`. 
 
@@ -26,8 +32,9 @@ static type checkers, and reasons why a bug is deemed undetectable. The button `
 reasons of undetectablility. Some of these reasons are from first principle and others are learnt during the preliminary 
 study. The GUI automatically stores the results in a file `results.csv` in the `data` folder.
 
+### Branch Naming Convention
 After the annotation, the authors can commit their changes by clicking the button `commit`. It automatically creates a 
-branch named `authorName + repo` (to be decided), adds and commits all the changes, and pushes to the remote repo.
+branch named `authorName-repo-bugID-typeChecker`, adds and commits all the changes, and pushes to the repo on GitHub.
 
 ## Annotation Tutorial
 I once gave a brief tutorial on how to add annotations, which consists of four examples.
