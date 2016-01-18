@@ -79,6 +79,7 @@ function FormFiller() {
     
     var _getValue = function(element){
         // test martin
+        // foo
         return jQuery(element).val().replace(/"/g, '\\"');
     };
 
