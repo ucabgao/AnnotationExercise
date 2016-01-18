@@ -23,7 +23,7 @@ java -jar AnnotationFacilitator.jar
 The configured GUI loads the input data that is in fact a set of bugs with information like the repo's name, SHAs of the 
 fix and buggy commit, URLs of the issue page, etc.. We navigate these bugs via two buttons, `next` and `previous`. 
 
-For each bug, the GUI is able to render webpages of the bug report, fix commit, and buggy commit. The fix commit page which 
+For each bug, the GUI is able to render webpages of the bug report, fix commit, and buggy commit, via three buttons, `Bug report`, `Buggy commit`, and `Fix commit`. The fix commit page which 
 displays the changes that the developers made to the bug is especially important, because this is where we locate the bug 
 that is about to be annotated. Once we confirm the bug's location (which file it resides in), we select the file name which 
 is just text in the webpages. We rightclick the selected text and a context menu pops. We can open this file locally by 
