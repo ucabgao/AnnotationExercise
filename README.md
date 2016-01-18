@@ -33,7 +33,7 @@ the configuration file `config.xml` (to be decided).
 We can use this GUI to record some annotation statistics, such as annotation time, whether a bug is detectable by the two 
 static type checkers, and reasons why a bug is deemed undetectable. The button `taxonomy` renders a table showing different 
 reasons of undetectablility. Some of these reasons are from first principle and others are learnt during the preliminary 
-study. The GUI automatically stores the results in a file `results.csv` in the `data` folder.
+study. The GUI automatically stores the results in a file `results.csv` in the `projects` folder.
 
 ### Branch Naming Convention
 After the annotation, the authors can commit their changes by clicking the button `commit`. It automatically creates a 
