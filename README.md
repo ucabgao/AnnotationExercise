@@ -12,9 +12,7 @@ ruby install.rb
 ```
 
 ### Configuration
-To use this GUI, we need to first provide some personal information in a file `config.xml` in the GUI's root directory. The 
-configuration includes your name which is used to distinguish different branches, your GitHub's username and password which 
-are used to push your changes so that other authors can see them, and the absolute path of your preferered editor, **mvim** in my case.
+Before using this GUI, we need to first customise it in `config.xml` in the root directory. The configuration includes your name, e.g., **zheng**, which is used to distinguish different branches, your GitHub's username and password which are used to push your changes so that other authors can see them, and the absolute path of your preferered editor, **mvim** in my case.
 
 ### Using the GUI 
 The configured GUI loads the input data that is in fact a set of bugs with information like the repo's name, SHAs of the 
