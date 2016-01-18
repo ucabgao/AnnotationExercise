@@ -23,12 +23,15 @@ java -jar AnnotationFacilitator.jar
 The configured GUI loads the input data that is in fact a set of bugs with information like the repo's name, SHAs of the 
 fix and buggy commit, URLs of the issue page, etc.. We navigate these bugs via two buttons, `next` and `previous`. 
 
-For each bug, the GUI is able to render webpages of the bug report, fix commit, and buggy commit, via three buttons, `Bug report`, `Buggy commit`, and `Fix commit`. The fix commit page which 
-displays the changes that the developers made to the bug is especially important, because this is where we locate the bug 
-that is about to be annotated. Once we confirm the bug's location (which file it resides in), we select the file name which 
-is text in the webpages. We rightclick the selected text and a context menu pops out. We can open this file locally by 
-clicking the second option **Open File**. Currently, the default editor is `mvim`. The author can customise the editor via 
-the configuration file `config.xml` (to be decided). 
+For each bug, the GUI is able to render webpages of the bug report, fix commit, and buggy commit, via three buttons, 
+`Bug report`, `Buggy commit`, and `Fix commit`. The fix commit page which displays the changes that the developers made to 
+the bug is especially important, because this is where we locate the bug that is about to be annotated. Once we confirm the 
+bug's location (which file it resides in), we select the file name which is text in the webpages. We rightclick the selected text and a context menu pops out. We can open this file locally by clicking the second option **Open File**. Currently, the 
+default editor is `mvim`. The author can customise the editor via the configuration file `config.xml`. 
+
+For example, for the fix commit which fixes the issue at https://github.com/wearecontrast/FormFiller/issues/7, we would select the text **src/FormFiller.js** on 
+https://github.com/wearecontrast/FormFiller/commit/144575e271c7f6889624fd9b900b04ac1e09a22a. After right-clicking it, we 
+would select the option **Open File** and the editor window will pop out. 
 
 We can use this GUI to record some annotation statistics, such as annotation time, whether a bug is detectable by the two 
 static type checkers, and reasons why a bug is deemed undetectable. The button `taxonomy` renders a table showing different 
