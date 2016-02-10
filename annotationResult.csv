@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+danheberden/jquery-weather,1,a44c18ce8f98ddd34e4a6ee71ac3af3e1c317983,TypeScript,Detectable,Deferred has type Function on which the reject method is not defined;  the return type of Deferred does define reject.  Since Deferred is a library --- we know this from the use of $. --- we would need to define TypeScript interface wrapper for the library.  ,0.0
