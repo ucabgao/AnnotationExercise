@@ -1,3 +1,4 @@
+/* @flow weak */
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/Services.jsm");
 var require = null;
