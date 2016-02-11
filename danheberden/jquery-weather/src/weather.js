@@ -1,3 +1,4 @@
+/* @flow weak */
 /*
  * yahoo-weather
  * https://github.com/danheberden/yahoo-weather
