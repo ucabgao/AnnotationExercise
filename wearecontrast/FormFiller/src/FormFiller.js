@@ -1,3 +1,5 @@
+/* @flow */
+
 var formfiller = new FormFiller();
 formfiller.loadForm();
 
