@@ -1,9 +1,10 @@
+/* @flow weak */
 // express-path.js
 // by @hyubs
 
 "use strict";
 
-var expressPath = function (app, routeParam, opt) {
+var expressPath = function (app, routeParam: string, opt) {
 	// Dependencies
 	var fs = require('fs');
 	var path = require('path');
@@ -65,7 +66,7 @@ var expressPath = function (app, routeParam, opt) {
 				}
 			}
 			else {
-				errorHandler.log("Module not found: " + controllerPath);
+				errorHandler.log("Module not found: " + mmPath);
 				return null;
 			}
 		}
